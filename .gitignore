@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+data/*.csv
+.streamlit/secrets.toml
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+

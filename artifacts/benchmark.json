@@ -1,0 +1,131 @@
+{
+  "data_sha256": "d2d4cf7f8ef3c1a6bd11d6cc354be90ccc929bcc44ae201b70ecc17c6ed9ead5",
+  "seed": 42,
+  "raw_rows": 53940,
+  "missing_price_rows": 24,
+  "duplicate_rows": 144,
+  "train_rows": 43009,
+  "test_rows": 10763,
+  "selected_model": "Boosting (31 leaves)",
+  "models": {
+    "Ridge": {
+      "cv_mae_usd": 742.7098538110431,
+      "cv_mae_std_usd": 10.700991102474452,
+      "mae_usd": 737.4071738172379,
+      "rmse_usd": 1123.5489902455138,
+      "r2": 0.9192314687762569
+    },
+    "Decision tree": {
+      "cv_mae_usd": 340.6620905690226,
+      "cv_mae_std_usd": 8.539260002392348,
+      "mae_usd": 333.00526681610614,
+      "rmse_usd": 637.6732495119692,
+      "r2": 0.9739831594627415
+    },
+    "Boosting (15 leaves)": {
+      "cv_mae_usd": 296.120088476545,
+      "cv_mae_std_usd": 5.002150560268983,
+      "mae_usd": 294.2247056004979,
+      "rmse_usd": 553.3044450126032,
+      "r2": 0.9804121632379569
+    },
+    "Boosting (31 leaves)": {
+      "cv_mae_usd": 283.32292743278697,
+      "cv_mae_std_usd": 4.8635796542093,
+      "mae_usd": 281.3643185064381,
+      "rmse_usd": 540.7141976394731,
+      "r2": 0.9812934497911734
+    }
+  },
+  "price_slices": [
+    {
+      "actual_price_band": "Up to $1,000",
+      "rows": 2902,
+      "mae_usd": 61.84111209748645,
+      "bias_usd": 13.026852111189891
+    },
+    {
+      "actual_price_band": "$1,000–$5,000",
+      "rows": 4918,
+      "mae_usd": 190.45719470673686,
+      "bias_usd": 25.73616065008949
+    },
+    {
+      "actual_price_band": "$5,000–$10,000",
+      "rows": 1913,
+      "mae_usd": 497.4232246517823,
+      "bias_usd": 45.59784814778088
+    },
+    {
+      "actual_price_band": "Above $10,000",
+      "rows": 1030,
+      "mae_usd": 932.6428548070843,
+      "bias_usd": -66.58048370850481
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "carat",
+      "mae_increase_usd": 2185.113109583855,
+      "repeat_std_usd": 11.780799140990831
+    },
+    {
+      "feature": "y",
+      "mae_increase_usd": 1094.261764258194,
+      "repeat_std_usd": 7.0944218140062665
+    },
+    {
+      "feature": "clarity",
+      "mae_increase_usd": 643.8053332637585,
+      "repeat_std_usd": 6.858922896447102
+    },
+    {
+      "feature": "color",
+      "mae_increase_usd": 409.5086589920682,
+      "repeat_std_usd": 4.346771044474651
+    },
+    {
+      "feature": "x",
+      "mae_increase_usd": 194.0166901816123,
+      "repeat_std_usd": 2.0405226186597054
+    },
+    {
+      "feature": "z",
+      "mae_increase_usd": 192.47074030571744,
+      "repeat_std_usd": 2.0436760052089533
+    },
+    {
+      "feature": "cut",
+      "mae_increase_usd": 25.163234424459706,
+      "repeat_std_usd": 0.9950724912734633
+    },
+    {
+      "feature": "depth",
+      "mae_increase_usd": 11.574713048076694,
+      "repeat_std_usd": 0.4366950468512432
+    },
+    {
+      "feature": "table",
+      "mae_increase_usd": 4.2046903620303,
+      "repeat_std_usd": 0.4262679576832933
+    }
+  ],
+  "grouped_feature_importance": [
+    {
+      "group": "Масса и размеры",
+      "mae_increase_usd": 4107.016383861319,
+      "repeat_std_usd": 35.59587965194838
+    },
+    {
+      "group": "Качество",
+      "mae_increase_usd": 905.0707703948149,
+      "repeat_std_usd": 5.731790537614136
+    },
+    {
+      "group": "Пропорции",
+      "mae_increase_usd": 14.463401904099829,
+      "repeat_std_usd": 0.7381002504383688
+    }
+  ],
+  "importance_repeats": 10
+}

@@ -1,0 +1,4 @@
+-r requirements.txt
+jupyterlab==4.6.6
+ipykernel==7.4.0
+matplotlib==3.11.2
